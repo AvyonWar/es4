@@ -7,16 +7,11 @@ public class Test {
 
         String  studentDetailTot =  Student.getStudentDetails();
         System.out.println("student " + studentDetailTot + "/100");
-
-
-
-
-
-
-
-
-
-
-
     }
 }
+
+/**
+ * Ho la sensazione che ci sia qualcosa che non va all'interno del codice.
+ * anche se mi stampa sia tutti e due gli studenti che un solo studente con il metodo get__()...
+ * forse dovrebbe stampare solo una volta?
+ */
