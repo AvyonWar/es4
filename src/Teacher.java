@@ -6,6 +6,7 @@ public class Teacher {
     }
 
    public void assignGrade(Student alum, int finalGrade){
-        Student.grade = finalGrade;
+        alum.grade = finalGrade;
+        System.out.println(alum.name + " " + finalGrade);
    }
 }

@@ -1,17 +1,23 @@
 public class Test {
     public  static void  main(String[]args){
-        Student stud1 = new Student("Giorgia", 88);
-        Student stud2 = new Student("Franco",66);
+        Student stud1 = new Student("Giorgia");  /**non prende il nome*/
+        Student stud2 = new Student( "Franco");
 
         Teacher teacher1 = new Teacher("Maura");
+        teacher1.assignGrade(stud1,60);
+        teacher1.assignGrade(stud2, 80);
 
-        String  studentDetailTot =  Student.getStudentDetails();
-        System.out.println("student " + studentDetailTot + "/100");
+        stud1.getStudentDetails();
+        stud2.getStudentDetails();
     }
 }
 
 /**
- * Ho la sensazione che ci sia qualcosa che non va all'interno del codice.
- * anche se mi stampa sia tutti e due gli studenti che un solo studente con il metodo get__()...
- * forse dovrebbe stampare solo una volta?
+ * così non mi stampa il voto assegnato dal professore,
+ * vorrei che venisse stampato così
+ *
+ * "Student Giorgia, vote 60/100";
+ * "Student Franco, vote 80/100";
+ *
+ * come posso fare?
  */
