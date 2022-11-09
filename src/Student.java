@@ -1,6 +1,6 @@
 public class Student {
-    public static String name;
-    public static int grade;
+    public  String name;
+    public  int grade;
 
     public Student(String student){
         this.name = student;
@@ -9,7 +9,7 @@ public class Student {
         System.out.println("student " + student);
 
     }
-    public static String getStudentDetails(){
+    public  String getStudentDetails(){
         return name + " " + grade;
     }
 

@@ -9,6 +9,8 @@ public class Test {
 
         stud1.getStudentDetails();
         stud2.getStudentDetails();
+        System.out.println("Student " + stud1.name + " , vota " + stud1.grade + "/100");
+        System.out.println("Student " + stud2.name + " , vota " + stud2.grade + "/100");
     }
 }
 
